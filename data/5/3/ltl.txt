@@ -1,0 +1,1 @@
+[](xCLOSED=> (<>xESTAB  /\ (<>xFINWAIT1 \/ <>xLASTACK)  /\ (<>xTIMEWAIT \/ <>xLASTACK)))

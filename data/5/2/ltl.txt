@@ -1,0 +1,1 @@
+[](xSYNRCVD => (<>xESTAB  /\ (<>xFINWAIT1 \/ <>xLASTACK)  /\ <>xCLOSED))

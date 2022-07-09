@@ -1,0 +1,69 @@
+p 270.0 60.0 submitted_order 0 n
+t 200.0 60.0 C_submit_order s 0 w n {} ne
+t 365.0 60.0 C_pay_order s 0 w n {} ne
+p 365.0 235.0 {is_order_verified?} 0 n
+t 270.0 235.0 P_receive_order s 0 w n {} ne
+p 150.0 235.0 platform_started 1 w
+p 455.0 60.0 order_option 0 n
+p 750.0 240.0 received_payment 0 n
+p 700.0 425.0 supplier_started 1 w
+t 565.0 110.0 C_hire_purchase s 0 w n {} ne
+t 565.0 25.0 C_full_payment s 0 w n {} ne
+p 115.0 60.0 customer_started 1 n
+p 560.0 235.0 Rejected 0 s
+p 845.0 60.0 {is_goods_received?} 0 s
+t 845.0 425.0 S_deliver_goods s 0 w n {} ne
+p 1275.0 415.0 finished 0 n
+t 660.0 240.0 P_card s 0 w n {} ne
+p 1095.0 55.0 P_check 0 n
+t 980.0 55.0 C_accountability n 0 w n {} ne
+t 1210.0 130.0 P_agree e 0 w n {} ne
+p 660.0 65.0 paid_order 0 n
+t 1195.0 230.0 P_refuse w 0 w n {} ne
+t 1120.0 385.0 S_withdrawal 0 w n
+t 1355.0 50.0 C_receive_refund n 0 w n {} ne
+t 1010.0 415.0 S_receive_payment s 0 w n {} ne
+p 1035.0 240.0 payed_supplier 0 n
+t 935.0 240.0 P_pay_supplier n 0 w n {} ne
+p 1365.0 235.0 refunded 0 s
+t 455.0 360.0 C_cancel_order 0 w n
+t 455.0 235.0 P_reject_order ne 0 w n {} ne
+e P_reject_order Rejected 1 n
+e C_cancel_order Rejected 1 n
+e {is_order_verified?} C_cancel_order 1 n
+e P_receive_order {is_order_verified?} 1 n
+e C_accountability P_check 1 n
+e S_receive_payment finished 1 n
+e S_withdrawal finished 1 n
+e S_deliver_goods {is_goods_received?} 1 n
+e {is_goods_received?} C_accountability 1 n
+e payed_supplier 0.6827007074 65.7951366 S_receive_payment 0.4358746289 66.30987856 1 n
+e P_pay_supplier payed_supplier 1 n
+e {is_goods_received?} P_pay_supplier 1 n
+e received_payment P_pay_supplier 1 n
+e {is_order_verified?} C_pay_order 1 n
+e received_payment S_deliver_goods ?1 n
+e C_hire_purchase paid_order 1 n
+e order_option C_hire_purchase 1 n
+e {is_order_verified?} P_reject_order 1 n
+e supplier_started S_deliver_goods 1 n
+e C_full_payment paid_order 1 n
+e C_submit_order submitted_order 1 n
+e customer_started C_submit_order 1 n
+e submitted_order C_pay_order 1 n
+e C_pay_order order_option 1 n
+e order_option C_full_payment 1 n
+e platform_started P_receive_order 1 n
+e submitted_order P_receive_order ?1 n
+e payed_supplier S_withdrawal 1 n
+e P_check P_agree 1 n
+e refunded C_receive_refund 1 n
+e paid_order P_card 1 n
+e P_card received_payment 1 n
+e P_check P_refuse 1 n
+e P_agree refunded 1 n
+e P_refuse refunded 1 n
+e C_receive_refund finished 1 n
+h {customer-supplier}
+
+

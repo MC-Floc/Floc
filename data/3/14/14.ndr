@@ -1,0 +1,62 @@
+t 505.0 50.0 r_stops e 0 w n {} ne
+p 505.0 375.0 r_active 0 e
+t 180.0 610.0 p_moved e 0 w n {} ne
+p 180.0 670.0 p_rel 0 e
+p 180.0 550.0 p_m 0 e
+t 180.0 490.0 p_move e 0 w n {} ne
+p 180.0 430.0 p_sc 0 e
+t 180.0 370.0 p_intoSC e 0 w n {} ne
+t 85.0 670.0 p_relSC w 0 w n {} ne
+p 355.0 50.0 off 0 n
+t 180.0 120.0 p_start e 0 w n {} ne
+t 180.0 245.0 p_started e 0 w n {} ne
+p 180.0 310.0 p_rdy 0 e
+p 95.0 120.0 p_i1 7 s
+t 505.0 610.0 r_end_move e 0 w n {} ne
+p 505.0 550.0 r_moving 0 e
+t 505.0 490.0 r_begin_move e 0 w n {} ne
+p 505.0 110.0 r_stopped 6 e
+t 505.0 175.0 r_starts e 0 w n {} ne
+p 355.0 245.0 initialized 0 n
+p 355.0 120.0 initialize 0 n
+p 85.0 575.0 access 6 n
+p 365.0 610.0 moved 0 n
+p 365.0 490.0 move 0 n
+t 95.0 50.0 p_sop w 0 w n {} ne
+p 180.0 180.0 p_i2 0 e
+e r_stops r_stopped 1 n
+e off r_stops 1 n
+e r_active 0.1052082879 68.41052551 r_stops 0.873959787 108.1896483 1 n
+e r_starts initialized 1 n
+e r_starts r_active 1 n
+e initialize r_starts 1 n
+e r_stopped r_starts 1 n
+e r_end_move moved 1 n
+e r_end_move 0.136624767 87.20665112 r_active 0.9126956515 84.38009242 1 n
+e r_moving r_end_move 1 n
+e r_begin_move r_moving 1 n
+e move r_begin_move 1 n
+e r_active r_begin_move 1 n
+e p_started p_rdy 1 n
+e initialized p_started 1 n
+e p_i2 p_started 1 n
+e p_start initialize 1 n
+e p_i1 p_start 1 n
+e p_sop off 1 n
+e p_sop p_i1 1 n
+e p_rdy 0.4894053477 120.266371 p_sop 0.6080670513 73.24616031 1 n
+e p_rel p_relSC 1 n
+e p_moved p_rel 1 n
+e moved p_moved 1 n
+e p_m p_moved 1 n
+e p_move move 1 n
+e p_move p_m 1 n
+e p_sc p_move 1 n
+e p_intoSC p_sc 1 n
+e access p_intoSC 1 n
+e p_rdy p_intoSC 1 n
+e p_relSC p_rdy 1 n
+e p_start p_i2 1 n
+h 14
+
+

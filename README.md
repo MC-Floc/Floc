@@ -1,9 +1,3 @@
-### Hi there 👋
-
-<!--
-**MC-Floc/MC-Floc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
-
 # MC-Floc Instructions
 
 ## 1、Data Instructions
@@ -26,7 +20,7 @@ M6: ECMA+{http://daze.ho.ua/tinaz.zip}
 
 M7: PAM {https://www.cristal.univ-lille.fr/iwaise12/tutorials/rdp-1-ptn.pdf}
 
-![1](C:\Users\DELL\Desktop\MC-Floc\MC-Floc\picture\1.png)
+![1](picture\1.png)
 
 ### 1.1 LTL Data sets
 
@@ -41,7 +35,7 @@ M7: PAM {https://www.cristal.univ-lille.fr/iwaise12/tutorials/rdp-1-ptn.pdf}
 * vs.txt is acyclic violation status
 * vs_l.txt is cycle violation status
 
-![2](C:\Users\DELL\Desktop\MC-Floc\MC-Floc\picture\2.png)
+![2](picture\2.png)
 
 ### 1.2 Deadlock Data sets
 
@@ -54,7 +48,7 @@ M7: PAM {https://www.cristal.univ-lille.fr/iwaise12/tutorials/rdp-1-ptn.pdf}
 * rg.txt is the state reachable graph
 * vs.txt is violation status
 
-![3](C:\Users\DELL\Desktop\MC-Floc\MC-Floc\picture\3.png)
+![3](picture\3.png)
 
 ## 2、Code Instructions
 
@@ -85,4 +79,4 @@ M7: PAM {https://www.cristal.univ-lille.fr/iwaise12/tutorials/rdp-1-ptn.pdf}
 
 * Other functions can set various parameters, including the path search algorithm used, the training set arrangement algorithm, the learning model, the number of correct and wrong paths, the result output location, and so on. The specific commands and explanations can be viewed in the tool or the following figure.
 
-![4](C:\Users\DELL\Desktop\MC-Floc\MC-Floc\picture\4.png)
+![4](picture\4.png)

@@ -50,26 +50,11 @@ M7: PAM {https://www.cristal.univ-lille.fr/iwaise12/tutorials/rdp-1-ptn.pdf}
 
 ![3](picture\3.png)
 
-## 2、Code Instructions
-
-​	All code files are stored in the "code" folder. 
-
-* ReachabilityGraph.py: extract various information of the state reachable graph.
-* tina_ state.py: search for violation status.
-* tina_file.py: transform Petri net models into various forms.
-* TraceSearch. py: path search.
-* main.py: fault location file, fault location according to the selected model.
-* NetClass.py: establish neural network files and compile the structure of various networks.
-* NetConstruct.py: describes the algorithm based on coverage.
-* ParaFunc.py: defines the default parameters of several networks, which can be modified.
-* Parameter.py: all parameters of the whole experiment are defined and can be modified.
-* main.spec: package the file and use pyinstaller to package it into a command line file.
-
-## 3、Configuration Instructions
+## 2、Configuration Instructions
 
 ​	This tool is a command line tool running on Windows system. Click main.exe can be run directly. Before running the program, you first need to download and install [Tina]([The TINA toolbox Home Page - TIme petri Net Analyzer - by LAAS/CNRS](https://projects.laas.fr/tina/papers.php)), which can check the model.
 
-## 4、Tool Instructions
+## 3、Tool Instructions
 
 ​	Input "mfl -help" to view the tool help, and the output is as follows.
 
